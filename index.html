@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoReply</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      padding: 20px;
+      color: #172033;
+    }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+    }
+    h1 { color: #087f5b; }
+    .item {
+      background: #e8f7f0;
+      padding: 12px;
+      margin: 12px 0;
+      border-radius: 8px;
+    }
+    button {
+      background: #087f5b;
+      color: white;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>AutoReply</h1>
+    <p>Smart replies for restaurants and shops.</p>
+
+    <h2>Dashboard</h2>
+
+    <div class="item">
+      <h3>Menu Management</h3>
+      <p>Manage food items and prices.</p>
+    </div>
+
+    <div class="item">
+      <h3>Customer Orders</h3>
+      <p>Manage your customer orders.</p>
+    </div>
+
+    <div class="item">
+      <h3>Automatic Replies</h3>
+      <p>Help customers get faster answers.</p>
+    </div>
+
+    <button onclick="showMessage()">Test AutoReply</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Welcome! AutoReply demo is working.";
+    }
+  </script>
+</body>
+</html>
